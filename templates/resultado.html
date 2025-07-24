@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado del Cuestionario</title>
+</head>
+<body>
+    <h1>Resultado del Cuestionario Médico</h1>
+    <p><strong>Diagnóstico:</strong> {{ resultado }}</p>
+    <p><strong>Posibilidad de inhabilitación:</strong> {{ porcentaje|round(2) }}%</p>
+
+    {% if resultado == 'Alto Riesgo' %}
+        <p style="color: red;"> Usted presenta un alto riesgo médico para ingresar a instituciones policiales o militares.</p>
+    {% elif resultado == 'Riesgo Moderado' %}
+        <p style="color: orange;"> Usted presenta un riesgo moderado. Se recomienda realizar una evaluación médica adicional.</p>
+    {% else %}
+        <p style="color: green;"> Usted presenta un bajo riesgo médico. ¡Felicidades!</p>
+    {% endif %}
+
+    <br>
+    <a href="/">Volver al formulario</a>
+</body>
+</html>

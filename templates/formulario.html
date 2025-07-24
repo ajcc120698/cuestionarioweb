@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuestionario Médico</title>
+</head>
+<body>
+    <h1>Cuestionario Médico</h1>
+    <form method="post">
+        <label>1. ¿Tiene antecedentes de hipertensión?</label>
+        <input type="radio" name="p1_hipertension" value="s" required> Sí
+        <input type="radio" name="p1_hipertension" value="n"> No<br>
+
+        <label>2. ¿Tiene diabetes?</label>
+        <input type="radio" name="p2_diabetes" value="s" required> Sí
+        <input type="radio" name="p2_diabetes" value="n"> No<br>
+
+        <label>3. Ingrese su peso (kg):</label>
+        <input type="number" name="p3_peso" step="0.01" required><br>
+
+        <label>4. Ingrese su estatura (m):</label>
+        <input type="number" name="p4_estatura" step="0.01" required><br>
+
+        <label>5. ¿Hace ejercicio o deporte?</label>
+        <input type="radio" name="p5_ejercicio" value="s" required> Sí
+        <input type="radio" name="p5_ejercicio" value="n"> No<br>
+
+        <label>6. ¿El deporte es de bajo impacto?</label>
+        <input type="radio" name="p6_bajo_impacto" value="s" required> Sí
+        <input type="radio" name="p6_bajo_impacto" value="n"> No<br>
+
+        <label>7. ¿El deporte es de medio impacto?</label>
+        <input type="radio" name="p7_medio_impacto" value="s" required> Sí
+        <input type="radio" name="p7_medio_impacto" value="n"> No<br>
+
+        <label>8. ¿El deporte es de alto impacto?</label>
+        <input type="radio" name="p8_alto_impacto" value="s" required> Sí
+        <input type="radio" name="p8_alto_impacto" value="n"> No<br>
+
+        <label>9. ¿Frecuencia de ejercicio por semana?</label>
+        <input type="number" name="p9_frecuencia" required><br>
+
+        <label>10. ¿Consume carbohidratos?</label>
+        <input type="radio" name="p10_carbohidratos" value="s" required> Sí
+        <input type="radio" name="p10_carbohidratos" value="n"> No<br>
+
+        <label>11. ¿Consume proteínas?</label>
+        <input type="radio" name="p11_proteinas" value="s" required> Sí
+        <input type="radio" name="p11_proteinas" value="n"> No<br>
+
+        <label>12. ¿Consume grasas?</label>
+        <input type="radio" name="p12_grasas" value="s" required> Sí
+        <input type="radio" name="p12_grasas" value="n"> No<br>
+
+        <label>13. ¿Fuma?</label>
+        <input type="radio" name="p13_fuma" value="s" required> Sí
+        <input type="radio" name="p13_fuma" value="n"> No<br>
+
+        <label>14. ¿Cuántos cigarrillos fuma al día?</label>
+        <input type="number" name="p14_cigarrillos" required><br>
+
+        <label>15. ¿Consume alguna otra sustancia?</label>
+        <input type="radio" name="p15_sustancias" value="s" required> Sí
+        <input type="radio" name="p15_sustancias" value="n"> No<br>
+
+        <label>16. ¿Consume bebidas alcohólicas?</label>
+        <input type="radio" name="p16_alcohol" value="s" required> Sí
+        <input type="radio" name="p16_alcohol" value="n"> No<br>
+
+        <label>17. ¿Cada cuánto consume bebidas alcohólicas?</label>
+        <input type="text" name="p17_frec_alcohol" required><br>
+
+        <label>18. ¿Tiene antecedentes cardíacos?</label>
+        <input type="radio" name="p18_cardio" value="s" required> Sí
+        <input type="radio" name="p18_cardio" value="n"> No<br>
+
+        <label>19. ¿Alguna vez perdió la conciencia?</label>
+        <input type="radio" name="p19_conciencia" value="s" required> Sí
+        <input type="radio" name="p19_conciencia" value="n"> No<br>
+
+        <label>20. ¿Ha convulsionado?</label>
+        <input type="radio" name="p20_convulsiones" value="s" required> Sí
+        <input type="radio" name="p20_convulsiones" value="n"> No<br>
+
+        <label>21. ¿Tiene antecedentes neurológicos?</label>
+        <input type="radio" name="p21_neuro" value="s" required> Sí
+        <input type="radio" name="p21_neuro" value="n"> No<br>
+
+        <label>22. ¿Sufre de dolores de cabeza frecuentes?</label>
+        <input type="radio" name="p22_cabeza" value="s" required> Sí
+        <input type="radio" name="p22_cabeza" value="n"> No<br>
+
+        <label>23. ¿Tiene molestias al ver luz?</label>
+        <input type="radio" name="p23_luz" value="s" required> Sí
+        <input type="radio" name="p23_luz" value="n"> No<br>
+
+        <label>24. ¿Se ha desorientado o perdido la noción del tiempo?</label>
+        <input type="radio" name="p24_desorientado" value="s" required> Sí
+        <input type="radio" name="p24_desorientado" value="n"> No<br>
+
+        <label>25. ¿Ha tenido movimientos involuntarios?</label>
+        <input type="radio" name="p25_mov_invol" value="s" required> Sí
+        <input type="radio" name="p25_mov_invol" value="n"> No<br>
+
+        <label>26. ¿Tomó medicamentos prolongadamente en la infancia?</label>
+        <input type="radio" name="p26_medic_infancia" value="s" required> Sí
+        <input type="radio" name="p26_medic_infancia" value="n"> No<br>
+
+        <label>27. ¿Tomó medicamentos prolongadamente entre 12 y 16 años?</label>
+        <input type="radio" name="p27_medic_1216" value="s" required> Sí
+        <input type="radio" name="p27_medic_1216" value="n"> No<br>
+
+        <br><input type="submit" value="Enviar respuestas">
+    </form>
+</body>
+</html>
